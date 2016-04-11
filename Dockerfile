@@ -1,8 +1,18 @@
 FROM debian:jessie
 
 # Install PHP
-RUN apt-get update \
-  && apt-get install -y php5 php5-cli php5-mysql php5-mcrypt php5-gd
+RUN apt-get update && apt-get install -y \
+  curl \
+  git \
+  ca-certificates \
+  php5 \
+  php5-cli \
+  php5-mysql \
+  php5-mcrypt \
+  php5-gd \
+  php5-common \
+  php5-curl \
+  --no-install-recommends && rm -r /var/lib/apt/lists/*
 
 # Install Composer
 RUN php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php \
@@ -15,4 +25,21 @@ COPY drupal /var/www/drupal
 WORKDIR /var/www/drupal
 
 # Install Drupal
-RUN composer install
+RUN composer install --ignore-platform-reqs --ansi --no-interaction
+
+# Remove dependencies
+RUN AUTO_ADDED_PACKAGES=`apt-mark showauto` \
+  && apt-get remove --purge -y \
+  curl \
+  git \
+  ca-certificates \
+  php5 \
+  php5-cli \
+  php5-mysql \
+  php5-mcrypt \
+  php5-gd \
+  php5-common \
+  php5-curl \
+  $AUTO_ADDED_PACKAGES
+
+VOLUME ["/var/www/drupal"]
