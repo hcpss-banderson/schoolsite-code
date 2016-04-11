@@ -1,7 +1,8 @@
 FROM debian:jessie
 
 # Install PHP
-RUN apt-get install -y php5 php5-cli php5-mysql php5-mcrypt php5-gd
+RUN apt-get update \
+  && apt-get install -y php5 php5-cli php5-mysql php5-mcrypt php5-gd
 
 # Install Composer
 RUN php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php \
