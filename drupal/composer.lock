@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9c771106d2cdc6a58c16ffaa61473fcd",
-    "content-hash": "335205c12b97fcf613a894b1871de928",
+    "hash": "0c42baa25faa3b11fd038222fe75928c",
+    "content-hash": "ae3aeb2a0236e0eea3cf83c48bd30fa9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -71,16 +71,16 @@
         },
         {
             "name": "codegyre/robo",
-            "version": "0.7.1",
+            "version": "0.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codegyre/Robo.git",
-                "reference": "1f4e0621fdc37521e2eaca67f33d1c4e240dc7d8"
+                "reference": "9982edecb19f59420031dd9855b0d31e861b8b68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codegyre/Robo/zipball/1f4e0621fdc37521e2eaca67f33d1c4e240dc7d8",
-                "reference": "1f4e0621fdc37521e2eaca67f33d1c4e240dc7d8",
+                "url": "https://api.github.com/repos/Codegyre/Robo/zipball/9982edecb19f59420031dd9855b0d31e861b8b68",
+                "reference": "9982edecb19f59420031dd9855b0d31e861b8b68",
                 "shasum": ""
             },
             "require": {
@@ -122,20 +122,20 @@
                 }
             ],
             "description": "Modern task runner",
-            "time": "2016-02-25 19:28:51"
+            "time": "2016-04-13 20:14:17"
         },
         {
             "name": "composer/installers",
-            "version": "v1.0.24",
+            "version": "v1.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "1cf7cc4b89d5e8549bbb7d6ab1de75da13d27988"
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/1cf7cc4b89d5e8549bbb7d6ab1de75da13d27988",
-                "reference": "1cf7cc4b89d5e8549bbb7d6ab1de75da13d27988",
+                "url": "https://api.github.com/repos/composer/installers/zipball/36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
                 "shasum": ""
             },
             "require": {
@@ -222,7 +222,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-04-05 11:42:46"
+            "time": "2016-04-13 19:46:30"
         },
         {
             "name": "composer/semver",
@@ -763,16 +763,16 @@
         },
         {
             "name": "drupal-composer/drupal-scaffold",
-            "version": "1.3.1",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-scaffold.git",
-                "reference": "13bd565b1468c27b97060f3c62175d12a5e1db7d"
+                "reference": "594e0cba2ad3c494da39a8cca0408ac9e3300f52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/13bd565b1468c27b97060f3c62175d12a5e1db7d",
-                "reference": "13bd565b1468c27b97060f3c62175d12a5e1db7d",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/594e0cba2ad3c494da39a8cca0408ac9e3300f52",
+                "reference": "594e0cba2ad3c494da39a8cca0408ac9e3300f52",
                 "shasum": ""
             },
             "require": {
@@ -805,7 +805,7 @@
                 "GPL-2.0+"
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
-            "time": "2016-04-11 07:58:02"
+            "time": "2016-04-13 15:46:44"
         },
         {
             "name": "drupal/config_installer",
@@ -839,17 +839,56 @@
             "time": "2015-12-23 12:31:59"
         },
         {
-            "name": "drupal/console",
-            "version": "0.11.2",
+            "name": "drupal/config_update",
+            "version": "8.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/hechoendrupal/DrupalConsole.git",
-                "reference": "7a5c0f539211a40954b50d0478b731ce4d12bd16"
+                "url": "https://git.drupal.org/project/config_update.git",
+                "reference": "ac1526df5836a611f04bb421945beddb6306b7f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/7a5c0f539211a40954b50d0478b731ce4d12bd16",
-                "reference": "7a5c0f539211a40954b50d0478b731ce4d12bd16",
+                "url": "https://ftp.drupal.org/files/projects/config_update-8.x-1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/config": "8.*",
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/config_update_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/config": "Required by drupal/config_update_ui",
+                "drupal/core": "Required by drupal/config_update_ui"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides basic revert and update functionality for other modules",
+            "homepage": "https://www.drupal.org/project/config_update",
+            "time": "2016-03-01 16:28:35"
+        },
+        {
+            "name": "drupal/console",
+            "version": "0.11.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hechoendrupal/DrupalConsole.git",
+                "reference": "e0912b0f52455542d18d39f12387f297ec0f6cac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/e0912b0f52455542d18d39f12387f297ec0f6cac",
+                "reference": "e0912b0f52455542d18d39f12387f297ec0f6cac",
                 "shasum": ""
             },
             "require": {
@@ -921,7 +960,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2016-04-07 20:42:09"
+            "time": "2016-04-14 06:45:29"
         },
         {
             "name": "drupal/core",
@@ -1087,6 +1126,45 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2016-04-05 23:34:17"
+        },
+        {
+            "name": "drupal/features",
+            "version": "8.3.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/features",
+                "reference": "14d66f68c13a0b93134ba15ac2ef641e6799eb1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/config": "8.*",
+                "drupal/config_update": "8.*",
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/features_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/features_ui"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-3.x": "8.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Enables administrators to package configuration into modules.",
+            "homepage": "https://www.drupal.org/project/features",
+            "time": "2016-04-07 19:57:25"
         },
         {
             "name": "drush/drush",
@@ -1457,16 +1535,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.2.3",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "2e89629ff057ebb49492ba08e6995d3a6a80021b"
+                "reference": "31382fef2889136415751badebbd1cb022a4ed72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/2e89629ff057ebb49492ba08e6995d3a6a80021b",
-                "reference": "2e89629ff057ebb49492ba08e6995d3a6a80021b",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/31382fef2889136415751badebbd1cb022a4ed72",
+                "reference": "31382fef2889136415751badebbd1cb022a4ed72",
                 "shasum": ""
             },
             "require": {
@@ -1511,7 +1589,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2016-02-18 21:54:00"
+            "time": "2016-04-13 19:56:01"
         },
         {
             "name": "henrikbjorn/lurker",
@@ -4057,16 +4135,16 @@
         },
         {
             "name": "zendframework/zend-stdlib",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-stdlib.git",
-                "reference": "22eb098958980fbbe6b9a06f209f5a4b496cc0c1"
+                "reference": "8bafa58574204bdff03c275d1d618aaa601588ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/22eb098958980fbbe6b9a06f209f5a4b496cc0c1",
-                "reference": "22eb098958980fbbe6b9a06f209f5a4b496cc0c1",
+                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/8bafa58574204bdff03c275d1d618aaa601588ae",
+                "reference": "8bafa58574204bdff03c275d1d618aaa601588ae",
                 "shasum": ""
             },
             "require": {
@@ -4098,7 +4176,7 @@
                 "stdlib",
                 "zf2"
             ],
-            "time": "2016-02-03 16:53:37"
+            "time": "2016-04-12 21:19:36"
         }
     ],
     "packages-dev": [
